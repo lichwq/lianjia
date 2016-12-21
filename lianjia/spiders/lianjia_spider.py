@@ -19,6 +19,7 @@ class DmozSpider(scrapy.Spider):
     # start_urls = ["http://sh.58.com/chuzu"]
     # start_urls = map(lambda city: 'http://' + city + '.58.com/dog/', CITY_LIST)
     start_urls = ["http://sh.lianjia.com/ditiefang/d2g1"]
+    #请求url列表
     # print start_urls
 
     def parse(self,  response):
