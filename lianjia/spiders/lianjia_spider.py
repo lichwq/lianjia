@@ -12,9 +12,9 @@ from lianjia.cities import CITY_LIST
 
 class DmozSpider(scrapy.Spider):
     name = "58tongcheng"
-    #这是我修改的部分
 
     allowed_domains = ["lianjia.com"]
+    #可允许域名列表
 
     # start_urls = ["http://sh.58.com/chuzu"]
     # start_urls = map(lambda city: 'http://' + city + '.58.com/dog/', CITY_LIST)
