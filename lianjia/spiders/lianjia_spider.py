@@ -12,6 +12,7 @@ from lianjia.cities import CITY_LIST
 
 class DmozSpider(scrapy.Spider):
     name = "58tongcheng"
+    #这是我修改的部分
 
     allowed_domains = ["lianjia.com"]
 
