@@ -18,7 +18,6 @@ from lianjia.cities import CITY_LIST
 
 class JsonWithEncodingCnblogsPipeline(object):
     def __init__(self):
-        #费德勒司法鉴定所捐款方式
         self.file = codecs.open('cnblogs.json', 'w', encoding='utf-8')
     def process_item(self, item, spider):
         line = json.dumps(dict(item), ensure_ascii=False) + "\n"
