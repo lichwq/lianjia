@@ -6,6 +6,7 @@ import time
 import random
 # from scrapy import Request
 
+
 from lianjia.items import lianjiaitem
 from lianjia.cities import CITY_LIST
 
