@@ -6,6 +6,7 @@ import time
 import random
 # from scrapy import Request
 
+
 from lianjia.items import lianjiaitem
 from lianjia.cities import CITY_LIST
 
@@ -15,10 +16,12 @@ class DmozSpider(scrapy.Spider):
     #xiugai
 
     allowed_domains = ["lianjia.com"]
+    #可允许域名列表
 
     # start_urls = ["http://sh.58.com/chuzu"]
     # start_urls = map(lambda city: 'http://' + city + '.58.com/dog/', CITY_LIST)
     start_urls = ["http://sh.lianjia.com/ditiefang/d2g1"]
+    #请求url列表
     # print start_urls
 
     def parse(self,  response):
